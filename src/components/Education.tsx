@@ -9,9 +9,9 @@ const Education = () => {
         </h2>
         <div className="bg-[#f5f5f7] p-8 rounded-xl border border-[#d2d2d7] flex flex-col md:flex-row gap-6 items-start">
           <img
-            src="https://brand.utah.edu/_images/opengraph/default_og.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/3/30/University_of_Utah_horizontal_logo.svg"
             alt="University of Utah"
-            className="w-24 h-24 rounded-lg object-cover"
+            className="w-32 h-24 rounded-lg object-contain"
           />
           <div className="flex-1">
             <h3 className="text-xl font-normal text-[#1d1d1f] mb-2 tracking-tight">
