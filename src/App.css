@@ -1,0 +1,30 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
