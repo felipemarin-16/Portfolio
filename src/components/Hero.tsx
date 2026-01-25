@@ -31,7 +31,7 @@ const Hero = () => {
         setShowCursor2(false)
         clearInterval(typeInterval)
       }
-    }, 300)
+    }, 80)
 
     return () => clearInterval(typeInterval)
   }, [])
