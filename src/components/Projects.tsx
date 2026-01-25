@@ -1,5 +1,3 @@
-import './Projects.css'
-
 interface Project {
   title: string
   description: string
@@ -27,20 +25,36 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="section projects">
-      <h2 className="section-title">Projects</h2>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-            <div className="project-tech">
-              {project.tech.map((tech, i) => (
-                <span key={i} className="tech-tag">{tech}</span>
-              ))}
+    <section id="projects" className="py-24 px-10 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-normal text-[#1d1d1f] mb-12 tracking-tight">
+          Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="p-6 bg-[#f5f5f7] rounded-xl border border-[#d2d2d7] transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            >
+              <h3 className="text-xl font-normal text-[#1d1d1f] mb-3 tracking-tight">
+                {project.title}
+              </h3>
+              <p className="text-sm text-[#6e6e73] mb-4 leading-relaxed">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {project.tech.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1 bg-white text-[#0071e3] text-xs rounded-full border border-[#d2d2d7]"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )
