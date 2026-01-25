@@ -6,14 +6,14 @@ const About = () => {
       <h2 className="section-title">About</h2>
       <div className="about-content">
         <p className="about-text">
-          Backend engineer specializing in scalable systems and machine learning infrastructure.
-          Experienced in building robust APIs, optimizing database performance, and implementing
-          ML/AI solutions that solve real-world problems.
+          Computer Science senior at the University of Utah with a Management minor, expected to graduate
+          December 2026. Specialized in machine learning and artificial intelligence with hands-on experience
+          in deep learning, computer vision, and natural language processing.
         </p>
         <p className="about-text">
-          Passionate about clean code, system design, and leveraging cutting-edge technologies
-          to create efficient, maintainable solutions. Strong focus on Python, Rust, and Go
-          for backend development and ML pipelines.
+          Passionate about building practical ML solutions using PyTorch and scikit-learn. Strong foundation
+          in algorithms, software development, and web technologies. Bilingual in English and Spanish.
+          Dean's List recipient (Fall 2025).
         </p>
       </div>
     </section>

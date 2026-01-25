@@ -9,28 +9,19 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'ML Pipeline Framework',
-    description: 'Scalable machine learning pipeline built with Python and Apache Airflow for automated model training and deployment.',
-    tech: ['Python', 'TensorFlow', 'Docker'],
-    link: '#'
+    title: 'Toxicity Detection Classifier',
+    description: 'Built a Transformer-encoder text classifier to detect toxicity in real user-LLM conversations using the ToxicChat dataset (~10,165 prompts). Implemented full training pipeline with tokenization, batching/masking, and improved minority class learning with class weighted cross-entropy.',
+    tech: ['PyTorch', 'Python', 'Transformers'],
   },
   {
-    title: 'Real-time Analytics API',
-    description: 'High-performance REST API built with Rust for processing and analyzing streaming data with sub-millisecond latency.',
-    tech: ['Rust', 'PostgreSQL', 'Redis'],
-    link: '#'
+    title: 'Scalable Malaria Cell Detection',
+    description: 'Classified 27,558 microscope images as infected or healthy using ML models (Logistic Regression, SVM, Random Forest) and CNNs. Achieved ~95% accuracy and 0.95 F1-score with CNN, demonstrating deep learning\'s advantage in image feature extraction.',
+    tech: ['Python', 'NumPy', 'Pandas', 'CNN'],
   },
   {
-    title: 'Distributed Task Queue',
-    description: 'Fault-tolerant distributed task processing system built with Go, handling millions of jobs per day.',
-    tech: ['Go', 'RabbitMQ', 'MongoDB'],
-    link: '#'
-  },
-  {
-    title: 'NLP Classification Model',
-    description: 'Production-ready text classification system using transformer models for automated content categorization.',
-    tech: ['Python', 'PyTorch', 'FastAPI'],
-    link: '#'
+    title: 'Assignment Management Website',
+    description: 'Developed a web platform for assignment uploads and grading, with student profiles and secure user authentication, ensuring seamless back-end and front-end integration.',
+    tech: ['Python', 'Django', 'HTML', 'CSS'],
   }
 ]
 
@@ -48,11 +39,6 @@ const Projects = () => {
                 <span key={i} className="tech-tag">{tech}</span>
               ))}
             </div>
-            {project.link && (
-              <a href={project.link} className="project-link">
-                View Project →
-              </a>
-            )}
           </div>
         ))}
       </div>

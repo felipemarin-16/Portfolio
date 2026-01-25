@@ -1,10 +1,9 @@
 import './Skills.css'
 
 const skills = {
-  'Languages': ['Python', 'Rust', 'Go', 'TypeScript', 'SQL'],
-  'ML/AI': ['TensorFlow', 'PyTorch', 'scikit-learn', 'Hugging Face'],
-  'Backend': ['FastAPI', 'Django', 'PostgreSQL', 'Redis', 'Docker'],
-  'Tools': ['Git', 'Linux', 'AWS', 'Kubernetes', 'CI/CD']
+  'Languages': ['Python', 'C#', 'Java', 'C++', 'SQL'],
+  'Data / ML': ['NumPy', 'Pandas', 'PyTorch', 'scikit-learn', 'Jupyter'],
+  'Web Dev': ['HTML', 'CSS', 'JavaScript', 'Django', 'ASP.NET']
 }
 
 const Skills = () => {

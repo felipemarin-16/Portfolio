@@ -14,9 +14,12 @@ const Education = () => {
           <div className="education-details">
             <h3 className="degree">Bachelor of Science in Computer Science</h3>
             <p className="university">University of Utah</p>
-            <p className="education-year">2020 - 2024</p>
+            <p className="education-year">Expected Graduation: December 2026</p>
             <p className="education-description">
-              Focus on Machine Learning, Distributed Systems, and Software Engineering
+              Minor in Management • Dean's List (Fall 2025)
+            </p>
+            <p className="education-description">
+              Focus: Machine Learning, Artificial Intelligence, Algorithms, Web Development
             </p>
           </div>
         </div>
