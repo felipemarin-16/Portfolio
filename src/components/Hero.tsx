@@ -51,26 +51,6 @@ const Hero = () => {
             <span className="inline-block w-0.5 h-6 bg-[#6e6e73] ml-1 animate-blink" />
           )}
         </p>
-        <div className="flex gap-10 md:gap-12 justify-center flex-wrap">
-          <a
-            href="#about"
-            className="text-sm font-normal text-[#0071e3] no-underline px-6 py-3 border border-[#d2d2d7] rounded-lg transition-all duration-300 hover:bg-[#0071e3] hover:text-white hover:border-[#0071e3] hover:-translate-y-0.5"
-          >
-            About
-          </a>
-          <a
-            href="#projects"
-            className="text-sm font-normal text-[#0071e3] no-underline px-6 py-3 border border-[#d2d2d7] rounded-lg transition-all duration-300 hover:bg-[#0071e3] hover:text-white hover:border-[#0071e3] hover:-translate-y-0.5"
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            className="text-sm font-normal text-[#0071e3] no-underline px-6 py-3 border border-[#d2d2d7] rounded-lg transition-all duration-300 hover:bg-[#0071e3] hover:text-white hover:border-[#0071e3] hover:-translate-y-0.5"
-          >
-            Contact
-          </a>
-        </div>
       </div>
     </section>
   )
