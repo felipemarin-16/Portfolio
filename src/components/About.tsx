@@ -1,20 +1,20 @@
 const About = () => {
   return (
-    <section id="about" className="py-32 px-10 bg-slate-50">
+    <section id="about" className="py-24 px-10 bg-[#f5f5f7]">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-16 tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-normal text-[#1d1d1f] mb-12 tracking-tight">
           About
         </h2>
-        <div className="space-y-8">
-          <p className="text-lg md:text-xl text-slate-700 leading-relaxed font-light">
+        <div className="space-y-6">
+          <p className="text-base md:text-lg text-[#1d1d1f] leading-relaxed">
             Computer Science senior at the University of Utah with a Management minor, expected to graduate
-            December 2026. Specialized in <span className="font-normal text-slate-900">machine learning and artificial intelligence</span> with hands-on experience
+            December 2026. Specialized in machine learning and artificial intelligence with hands-on experience
             in deep learning, computer vision, and natural language processing.
           </p>
-          <p className="text-lg md:text-xl text-slate-700 leading-relaxed font-light">
-            Passionate about building practical ML solutions using <span className="font-normal text-slate-900">PyTorch and scikit-learn</span>. Strong foundation
+          <p className="text-base md:text-lg text-[#1d1d1f] leading-relaxed">
+            Passionate about building practical ML solutions using PyTorch and scikit-learn. Strong foundation
             in algorithms, software development, and web technologies. Bilingual in English and Spanish.
-            <span className="inline-block ml-3 px-4 py-1.5 bg-slate-900 text-white text-sm font-normal tracking-wide">DEAN'S LIST FALL 2025</span>
+            Dean's List recipient (Fall 2025).
           </p>
         </div>
       </div>

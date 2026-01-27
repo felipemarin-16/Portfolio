@@ -16,40 +16,40 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-sm border-b border-slate-200' : 'bg-white'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-100 ${
+        scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-10">
-        <div className="flex items-center justify-center h-20">
-          <div className="flex items-center gap-12">
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="flex items-center justify-center h-16">
+          <div className="flex items-center gap-8">
             <a
               href="#about"
-              className="text-xs font-normal text-slate-900 no-underline tracking-widest uppercase transition-opacity duration-200 hover:opacity-50"
+              className="text-sm font-normal text-[#1d1d1f] no-underline transition-opacity duration-200 hover:opacity-60"
             >
               About
             </a>
             <a
               href="#projects"
-              className="text-xs font-normal text-slate-900 no-underline tracking-widest uppercase transition-opacity duration-200 hover:opacity-50"
+              className="text-sm font-normal text-[#1d1d1f] no-underline transition-opacity duration-200 hover:opacity-60"
             >
               Projects
             </a>
             <a
               href="#skills"
-              className="text-xs font-normal text-slate-900 no-underline tracking-widest uppercase transition-opacity duration-200 hover:opacity-50"
+              className="text-sm font-normal text-[#1d1d1f] no-underline transition-opacity duration-200 hover:opacity-60"
             >
               Skills
             </a>
             <a
               href="#education"
-              className="text-xs font-normal text-slate-900 no-underline tracking-widest uppercase transition-opacity duration-200 hover:opacity-50"
+              className="text-sm font-normal text-[#1d1d1f] no-underline transition-opacity duration-200 hover:opacity-60"
             >
               Education
             </a>
             <a
               href="#contact"
-              className="text-xs font-normal text-slate-900 no-underline tracking-widest uppercase transition-opacity duration-200 hover:opacity-50"
+              className="text-sm font-normal text-[#1d1d1f] no-underline transition-opacity duration-200 hover:opacity-60"
             >
               Contact
             </a>
