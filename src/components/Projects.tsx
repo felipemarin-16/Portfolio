@@ -24,33 +24,42 @@ const projects: Project[] = [
 ]
 
 const Projects = () => {
+  const gradients = [
+    'from-cyan-500 to-blue-500',
+    'from-emerald-500 to-teal-500',
+    'from-blue-500 to-violet-500',
+  ]
+
   return (
-    <section id="projects" className="py-24 px-10 bg-white">
+    <section id="projects" className="py-24 px-10 bg-gradient-to-b from-white to-slate-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-normal text-[#1d1d1f] mb-12 tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent mb-12 tracking-tight">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="p-6 bg-[#f5f5f7] rounded-xl border border-[#d2d2d7] transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              className="group p-6 bg-white rounded-2xl border-2 border-slate-200 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-200/50 hover:-translate-y-2 hover:border-cyan-400 relative overflow-hidden"
             >
-              <h3 className="text-xl font-normal text-[#1d1d1f] mb-3 tracking-tight">
-                {project.title}
-              </h3>
-              <p className="text-sm text-[#6e6e73] mb-4 leading-relaxed">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {project.tech.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 bg-white text-[#0071e3] text-xs rounded-full border border-[#d2d2d7]"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              <div className={`absolute inset-0 bg-gradient-to-br ${gradients[index % gradients.length]} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+              <div className="relative z-10">
+                <h3 className="text-xl font-semibold text-slate-800 mb-3 tracking-tight group-hover:text-cyan-600 transition-colors duration-300">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-slate-600 mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1.5 bg-gradient-to-r from-cyan-50 to-blue-50 text-cyan-700 text-xs font-medium rounded-full border border-cyan-200 hover:scale-110 transition-transform duration-200"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
