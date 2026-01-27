@@ -6,25 +6,25 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 px-10 bg-[#f5f5f7]">
+    <section id="skills" className="py-32 px-10 bg-slate-50">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-normal text-[#1d1d1f] mb-12 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-16 tracking-tight">
           Skills
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {Object.entries(skills).map(([category, items]) => (
-            <div key={category} className="bg-white p-6 rounded-xl border border-[#d2d2d7]">
-              <h3 className="text-lg font-normal text-[#1d1d1f] mb-4 tracking-tight">
+            <div key={category}>
+              <h3 className="text-sm font-normal text-slate-900 mb-6 tracking-widest uppercase">
                 {category}
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="space-y-3">
                 {items.map((skill, index) => (
-                  <span
+                  <div
                     key={index}
-                    className="px-3 py-1.5 bg-[#f5f5f7] text-[#1d1d1f] text-sm rounded-lg"
+                    className="text-base text-slate-600 font-light py-1 hover:text-slate-900 transition-colors duration-200"
                   >
                     {skill}
-                  </span>
+                  </div>
                 ))}
               </div>
             </div>
